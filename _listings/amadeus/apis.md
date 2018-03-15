@@ -9,12 +9,11 @@ tags:
 - Travel
 - Transportation
 - Technology
-- New
 - Marketplace
 - Hotel
 - Airlines
-created: "2018-03-10"
-modified: "2018-03-10"
+created: "2018-03-14"
+modified: "2018-03-14"
 url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/apis.yaml
 specificationVersion: "0.14"
 apis:
@@ -29,7 +28,6 @@ apis:
   - Travel
   - Transportation
   - Technology
-  - New
   - Marketplace
   - Hotel
   - Airlines
