@@ -91,6 +91,7 @@ paths:
         200:
           description: OK
       tags:
+      - airlines
       - flights
       - low
       - fare
