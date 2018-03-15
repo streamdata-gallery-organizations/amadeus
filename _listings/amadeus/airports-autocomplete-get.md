@@ -43,6 +43,7 @@ paths:
         200:
           description: OK
       tags:
+      - airlines
       - airports
       - autocomplete
 definitions:
