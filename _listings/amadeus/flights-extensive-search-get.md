@@ -58,6 +58,7 @@ paths:
         200:
           description: OK
       tags:
+      - airlines
       - flights
       - extensive
       - search
