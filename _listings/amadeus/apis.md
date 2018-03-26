@@ -12,8 +12,8 @@ tags:
 - Marketplace
 - Hotel
 - Airlines
-created: "2018-03-24"
-modified: "2018-03-24"
+created: "2018-03-26"
+modified: "2018-03-26"
 url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/apis.yaml
 specificationVersion: "0.14"
 apis:
