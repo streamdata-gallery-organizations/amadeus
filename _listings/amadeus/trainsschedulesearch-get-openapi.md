@@ -270,7 +270,7 @@ paths:
           dollars) unless some other currency code is specified
       - in: query
         name: mobile
-        description: 'Setting this to true will show mobile web deeplinks '
+        description: Setting this to true will show mobile web deeplinks
       - in: query
         name: origin
         description: City code from which the traveler will depart
