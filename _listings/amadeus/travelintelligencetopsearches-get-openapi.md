@@ -10,7 +10,7 @@ info:
     a country (also refers to as market) and returns up to 50 results, ordered by
     popularity, showing number of searches for most searched destination with its
     previous year comparison. This search also shows patterns on how travelers are
-    searching for flights, revealing where, when and for how long they\u2019re planning
+    searching for flights, revealing where, when and for how long they???re planning
     to travel. See\nTrip Durations(How long are the trips planned for?) and\n Advance
     Search Period (How long before departures do travelers start searching for their
     trips?)\n\nThis estimated search is based on Amadeus' Travel Intelligence Engine,
@@ -1033,8 +1033,8 @@ paths:
         ordered by popularity, showing number of searches for most searched destination
         with its previous year comparison. This search also shows patterns on how
         travelers are searching for flights, revealing where, when and for how long
-        they\u2019re planning to travel. See\nTrip Durations(How long are the trips
-        planned for?) and\n Advance Search Period (How long before departures do travelers
+        they???re planning to travel. See\nTrip Durations(How long are the trips planned
+        for?) and\n Advance Search Period (How long before departures do travelers
         start searching for their trips?)\n\nThis estimated search is based on Amadeus'
         Travel Intelligence Engine, a high performance scalable cloud-based platform,
         born in the age of Big Data and purposely built for the industry bringing

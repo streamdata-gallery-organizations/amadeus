@@ -7,13 +7,13 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28139-sand
 x-kinRank: "8"
 x-alexaRank: "4309"
 tags: Amadeus
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-29"
+modified: "2018-08-29"
 url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Amadeus Get Airports Autocomplete
-  x-api-slug: amadeus
+- name: Amadeus - Get Airports Autocomplete
+  x-api-slug: airportsautocomplete-get
   description: "Using the term parameter and given the start of any word in an airport's
     official name, a city name, or the start of an IATA code, this API provides the
     full name and IATA location code of the city or airport, for use in flight searches.
@@ -29,15 +29,16 @@ apis:
     of English City Name (if not already included in the airport name)."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28139-sandbox-amadeus-com.jpg
   humanURL: https://amadeus.com
-  baseURL: https://api.sandbox.amadeus.com//v1.2//airports/autocomplete
-  tags: Airlines, Airports, Autocomplete
+  baseURL: https://api.sandbox.amadeus.com//v1.2
+  tags: Marketplace, Technology, Travel, Transportation, Airlines, API Provider, Hotels,
+    Profiles, Relative Data, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/airportsautocomplete-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/airportsautocomplete-get-openapi.md
-- name: Amadeus Get Airports Nearest Relevant
-  x-api-slug: amadeus
+- name: Amadeus - Get Airports Nearest Relevant
+  x-api-slug: airportsnearestrelevant-get
   description: |-
     This service gives the most relevant airports in a radius of 500 km around the given coordinates. The relevance of an airport is computed by dividing the number of airport movements (take offs and landings) by the distance from the point. This causes the relevance of an airport to increase exponentially as you approach it.
 
@@ -48,15 +49,16 @@ apis:
     The result is a list of airports sorted by decreasing relevance. It always contains the nearest airport with significant commercial traffic. You can freely download the point of reference information used by this API from the Open Travel Data project.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28139-sandbox-amadeus-com.jpg
   humanURL: https://amadeus.com
-  baseURL: https://api.sandbox.amadeus.com//v1.2//airports/nearest-relevant
-  tags: Airlines, Airports, Nearest, Relevant
+  baseURL: https://api.sandbox.amadeus.com//v1.2
+  tags: Marketplace, Technology, Travel, Transportation, Airlines, API Provider, Hotels,
+    Profiles, Relative Data, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/airportsnearestrelevant-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/airportsnearestrelevant-get-openapi.md
-- name: Amadeus Get Cars Search Airport
-  x-api-slug: amadeus
+- name: Amadeus - Get Cars Search Airport
+  x-api-slug: carssearchairport-get
   description: "With this API you can find out the price and type of car, for all
     car rental providers, near a specified airport.\n\nYou can quickly see the locations
     of car providers near a given airport, and what cars are available to rent, and
@@ -71,15 +73,16 @@ apis:
     where it will be dropped off."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28139-sandbox-amadeus-com.jpg
   humanURL: https://amadeus.com
-  baseURL: https://api.sandbox.amadeus.com//v1.2//cars/search-airport
-  tags: Cars, Search, Airport
+  baseURL: https://api.sandbox.amadeus.com//v1.2
+  tags: Marketplace, Technology, Travel, Transportation, Airlines, API Provider, Hotels,
+    Profiles, Relative Data, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/carssearchairport-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/carssearchairport-get-openapi.md
-- name: Amadeus Get Cars Search
-  x-api-slug: amadeus
+- name: Amadeus - Get Cars Search
+  x-api-slug: carssearchcircle-get
   description: "With this API you can find out the price and type of car, for all
     car rental providers, in a specified geographical location.\n\nYou can quickly
     see the locations of car providers near a given point, and what cars are available
@@ -94,15 +97,16 @@ apis:
     is the same as the one where it will be dropped off."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28139-sandbox-amadeus-com.jpg
   humanURL: https://amadeus.com
-  baseURL: https://api.sandbox.amadeus.com//v1.2//cars/search-circle
-  tags: Cars, Search, Circle
+  baseURL: https://api.sandbox.amadeus.com//v1.2
+  tags: Marketplace, Technology, Travel, Transportation, Airlines, API Provider, Hotels,
+    Profiles, Relative Data, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/carssearchcircle-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/carssearchcircle-get-openapi.md
-- name: Amadeus Get Flights Affiliate Search
-  x-api-slug: amadeus
+- name: Amadeus - Get Flights Affiliate Search
+  x-api-slug: flightsaffiliatesearch-get
   description: "The Flight Affiliate Search API combines Amadeus' flight search technology
     with Travel Audience's Connect API partners to provide a unique flight search,
     where all results come with deep-links to book the flight at a partner's website.
@@ -115,15 +119,16 @@ apis:
     in the search results if you sign up for an account at connect.travelaudience.com."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28139-sandbox-amadeus-com.jpg
   humanURL: https://amadeus.com
-  baseURL: https://api.sandbox.amadeus.com//v1.2//flights/affiliate-search
-  tags: Airlines, Flights, Affiliate, Search
+  baseURL: https://api.sandbox.amadeus.com//v1.2
+  tags: Marketplace, Technology, Travel, Transportation, Airlines, API Provider, Hotels,
+    Profiles, Relative Data, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/flightsaffiliatesearch-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/flightsaffiliatesearch-get-openapi.md
-- name: Amadeus Get Flights Extensive Search
-  x-api-slug: amadeus
+- name: Amadeus - Get Flights Extensive Search
+  x-api-slug: flightsextensivesearch-get
   description: |-
     The Extensive Flight Search allows you to find the prices of one-way or return flights between two airports over a large number of dates, and for a large variety of stay durations. The search doesn't return exact itineraries, but rather tells you the best price for a flight on a given day, for a stay of a given duration.
 
@@ -132,15 +137,16 @@ apis:
     That said, a price graph like this provides a powerful bargin shopping tool - allowing travelers with flexible itineraries to identify days on which they can get the cheapest flights to their destinations.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28139-sandbox-amadeus-com.jpg
   humanURL: https://amadeus.com
-  baseURL: https://api.sandbox.amadeus.com//v1.2//flights/extensive-search
-  tags: Airlines, Flights, Extensive, Search
+  baseURL: https://api.sandbox.amadeus.com//v1.2
+  tags: Marketplace, Technology, Travel, Transportation, Airlines, API Provider, Hotels,
+    Profiles, Relative Data, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/flightsextensivesearch-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/flightsextensivesearch-get-openapi.md
-- name: Amadeus Get Flights Inspiration Search
-  x-api-slug: amadeus
+- name: Amadeus - Get Flights Inspiration Search
+  x-api-slug: flightsinspirationsearch-get
   description: |-
     The Inspiration Flight Search allows you to find the prices of one-way and return flights from an origin city without necessarily having a destination, or even a flight date, in mind. The search doesn't return a distinct set of price options, but rather, can tell you the price of flying from a given city to some destination, for a trip of a given duration, that falls within a given date range.
 
@@ -149,15 +155,16 @@ apis:
     Despite this limitation don't underestimate the power of this API. Thanks to its quick response speed you can easily pair it with other APIs to provide a low fare and inspiration for any destination. For example, you can could combine it with a event search API and suggest a total price to see go and see an concert or a game in a selection of cities.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28139-sandbox-amadeus-com.jpg
   humanURL: https://amadeus.com
-  baseURL: https://api.sandbox.amadeus.com//v1.2//flights/inspiration-search
-  tags: Airlines, Flights, Inspiration, Search
+  baseURL: https://api.sandbox.amadeus.com//v1.2
+  tags: Marketplace, Technology, Travel, Transportation, Airlines, API Provider, Hotels,
+    Profiles, Relative Data, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/flightsinspirationsearch-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/flightsinspirationsearch-get-openapi.md
-- name: Amadeus Get Flights Low Fare Search
-  x-api-slug: amadeus
+- name: Amadeus - Get Flights Low Fare Search
+  x-api-slug: flightslowfaresearch-get
   description: "This is the low fare search engine Amadeus uses to retrieve the best
     price for flights, based on our latest Master Pricer Travel Board technology.
     This document describes how to make a low fare search and how to handle the returned
@@ -170,30 +177,32 @@ apis:
     in order to get from the origin airport to the destination airport."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28139-sandbox-amadeus-com.jpg
   humanURL: https://amadeus.com
-  baseURL: https://api.sandbox.amadeus.com//v1.2//flights/low-fare-search
-  tags: Airlines, Flights, Low, Fare, Search
+  baseURL: https://api.sandbox.amadeus.com//v1.2
+  tags: Marketplace, Technology, Travel, Transportation, Airlines, API Provider, Hotels,
+    Profiles, Relative Data, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/flightslowfaresearch-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/flightslowfaresearch-get-openapi.md
-- name: Amadeus Get Hotels Search Airport
-  x-api-slug: amadeus
+- name: Amadeus - Get Hotels Search Airport
+  x-api-slug: hotelssearchairport-get
   description: |-
     A fast Hotel shopping API to see which hotels are available in a given area, on a given day and displays their lowest prices. With this API you can find out the price of the cheapest daily rate for all hotels near a given airport.
 
     This API allows you to quickly see the locations of hotels near a given airport, and what prices in that area look like. Note that hotel images are not available to users outside of Amadeus, as we are not licensed to redistribute them. The API is based on our high-speed hotel pricing cache, which is also used to power the Amadeus Hotel Search Engine application. Results are returned very quickly, response times are generally under 2s. Our cache has great global coverage and is constantly refreshed with the latest prices.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28139-sandbox-amadeus-com.jpg
   humanURL: https://amadeus.com
-  baseURL: https://api.sandbox.amadeus.com//v1.2//hotels/search-airport
-  tags: Hotels, Search, Airport
+  baseURL: https://api.sandbox.amadeus.com//v1.2
+  tags: Marketplace, Technology, Travel, Transportation, Airlines, API Provider, Hotels,
+    Profiles, Relative Data, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/hotelssearchairport-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/hotelssearchairport-get-openapi.md
-- name: Amadeus Get Hotels Search Box
-  x-api-slug: amadeus
+- name: Amadeus - Get Hotels Search Box
+  x-api-slug: hotelssearchbox-get
   description: "A fast Hotel shopping API to see which hotels are available in a given
     area, on a given day and displays their lowest prices. With this API you can find
     out the price of the cheapest daily rate for all hotels within a specified geographical
@@ -210,15 +219,16 @@ apis:
     refreshed with the latest prices."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28139-sandbox-amadeus-com.jpg
   humanURL: https://amadeus.com
-  baseURL: https://api.sandbox.amadeus.com//v1.2//hotels/search-box
-  tags: Hotels, Search, Box
+  baseURL: https://api.sandbox.amadeus.com//v1.2
+  tags: Marketplace, Technology, Travel, Transportation, Airlines, API Provider, Hotels,
+    Profiles, Relative Data, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/hotelssearchbox-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/hotelssearchbox-get-openapi.md
-- name: Amadeus Get Hotels Search Circle
-  x-api-slug: amadeus
+- name: Amadeus - Get Hotels Search Circle
+  x-api-slug: hotelssearchcircle-get
   description: "A fast Hotel shopping API to see which hotels are available in a given
     area, on a given day and displays their lowest prices. With this API you can find
     out the price of the cheapest daily rate for all hotels within a specified radius
@@ -235,15 +245,16 @@ apis:
     prices."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28139-sandbox-amadeus-com.jpg
   humanURL: https://amadeus.com
-  baseURL: https://api.sandbox.amadeus.com//v1.2//hotels/search-circle
-  tags: Hotels, Search, Circle
+  baseURL: https://api.sandbox.amadeus.com//v1.2
+  tags: Marketplace, Technology, Travel, Transportation, Airlines, API Provider, Hotels,
+    Profiles, Relative Data, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/hotelssearchcircle-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/hotelssearchcircle-get-openapi.md
-- name: Amadeus Get Hotels Property Code
-  x-api-slug: amadeus
+- name: Amadeus - Get Hotels Property Code
+  x-api-slug: hotelsproperty-code-get
   description: "This API allows you to quickly see the detailed information of a single
     hotel, including descriptions, address, GPS location, amenities, awards, lowest
     priced room and all room prices and booking information. \n\nThis API gives you
@@ -255,15 +266,16 @@ apis:
     refreshed with the latest prices."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28139-sandbox-amadeus-com.jpg
   humanURL: https://amadeus.com
-  baseURL: https://api.sandbox.amadeus.com//v1.2//hotels/{property_code}
-  tags: Hotels, Property, Code
+  baseURL: https://api.sandbox.amadeus.com//v1.2
+  tags: Marketplace, Technology, Travel, Transportation, Airlines, API Provider, Hotels,
+    Profiles, Relative Data, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/hotelsproperty-code-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/hotelsproperty-code-get-openapi.md
-- name: Amadeus Get Location Code
-  x-api-slug: amadeus
+- name: Amadeus - Get Location Code
+  x-api-slug: locationcode-get
   description: |-
     This service retrieves the location information corresponding to a IATA city or airport code.
 
@@ -272,15 +284,16 @@ apis:
     This API is based on the Amadeus supported Geobases open-source project. If you wish to make your own database with all IATA location information, in order to get faster reponses, you can download the latest raw data from their github page.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28139-sandbox-amadeus-com.jpg
   humanURL: https://amadeus.com
-  baseURL: https://api.sandbox.amadeus.com//v1.2//location/{code}
-  tags: Location, Code
+  baseURL: https://api.sandbox.amadeus.com//v1.2
+  tags: Marketplace, Technology, Travel, Transportation, Airlines, API Provider, Hotels,
+    Profiles, Relative Data, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/locationcode-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/locationcode-get-openapi.md
-- name: Amadeus Get Points Of Interest Yapq Search Circle
-  x-api-slug: amadeus
+- name: Amadeus - Get Points Of Interest Yapq Search Circle
+  x-api-slug: pointsofinterestyapqsearchcircle-get
   description: "Amadeus has partnered with YapQ to bring you point of interest APIs
     with the goal of offering you unbiased ratings of landmarks and tourist attractions.
     YapQ rates places according to their interest on social media and provides Wikipedia
@@ -293,15 +306,16 @@ apis:
     without warning. We'd be interested in your feedback - send us an email."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28139-sandbox-amadeus-com.jpg
   humanURL: https://amadeus.com
-  baseURL: https://api.sandbox.amadeus.com//v1.2//points-of-interest/yapq-search-circle
-  tags: Points, Of, Interest, Yapq, Search, Circle
+  baseURL: https://api.sandbox.amadeus.com//v1.2
+  tags: Marketplace, Technology, Travel, Transportation, Airlines, API Provider, Hotels,
+    Profiles, Relative Data, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/pointsofinterestyapqsearchcircle-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/pointsofinterestyapqsearchcircle-get-openapi.md
-- name: Amadeus Get Points Of Interest Yapq Search Text
-  x-api-slug: amadeus
+- name: Amadeus - Get Points Of Interest Yapq Search Text
+  x-api-slug: pointsofinterestyapqsearchtext-get
   description: "Amadeus has partnered with YapQ to bring you point of interest APIs
     with the goal of offering you unbiased ratings of landmarks and tourist attractions.
     YapQ rates these points according to their interest on social media and provides
@@ -314,27 +328,29 @@ apis:
     warning. We'd be interested in your feedback - send us an email."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28139-sandbox-amadeus-com.jpg
   humanURL: https://amadeus.com
-  baseURL: https://api.sandbox.amadeus.com//v1.2//points-of-interest/yapq-search-text
-  tags: Points, Of, Interest, Yapq, Search, Text
+  baseURL: https://api.sandbox.amadeus.com//v1.2
+  tags: Marketplace, Technology, Travel, Transportation, Airlines, API Provider, Hotels,
+    Profiles, Relative Data, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/pointsofinterestyapqsearchtext-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/pointsofinterestyapqsearchtext-get-openapi.md
-- name: Amadeus Get Rail Station
-  x-api-slug: amadeus
+- name: Amadeus - Get Rail Station
+  x-api-slug: railstationid-get
   description: Get rail station
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28139-sandbox-amadeus-com.jpg
   humanURL: https://amadeus.com
-  baseURL: https://api.sandbox.amadeus.com//v1.2//rail-station/{id}
-  tags: Rail, Station
+  baseURL: https://api.sandbox.amadeus.com//v1.2
+  tags: Marketplace, Technology, Travel, Transportation, Airlines, API Provider, Hotels,
+    Profiles, Relative Data, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/railstationid-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/railstationid-get-openapi.md
-- name: Amadeus Get Rail Stations Autocomplete
-  x-api-slug: amadeus
+- name: Amadeus - Get Rail Stations Autocomplete
+  x-api-slug: railstationsautocomplete-get
   description: |-
     Given the start of any word in a rail station's official name, as a term, this API provides the full name and rail station ID of a rail station for use in searches. The response provides an array of up to 20 possible matches, sorted by passenger traffic, in a JQuery Autocomplete compatible format.
 
@@ -343,15 +359,16 @@ apis:
     Note that only French and Italian rail stations are supported by the Rail Station Autocomplete API
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28139-sandbox-amadeus-com.jpg
   humanURL: https://amadeus.com
-  baseURL: https://api.sandbox.amadeus.com//v1.2//rail-stations/autocomplete
-  tags: Rail, Stations, Autocomplete
+  baseURL: https://api.sandbox.amadeus.com//v1.2
+  tags: Marketplace, Technology, Travel, Transportation, Airlines, API Provider, Hotels,
+    Profiles, Relative Data, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/railstationsautocomplete-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/railstationsautocomplete-get-openapi.md
-- name: Amadeus Get Trains Extensive Search
-  x-api-slug: amadeus
+- name: Amadeus - Get Trains Extensive Search
+  x-api-slug: trainsextensivesearch-get
   description: "This API allows you to search trains availability and prices for a
     single day or date range. It's based on our Rail Instant Search technology, providing
     you with immediate results from our rail search cache.\n\nThis API has content
@@ -359,15 +376,16 @@ apis:
     trips - where a single train takes you directly from the origin to the destination."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28139-sandbox-amadeus-com.jpg
   humanURL: https://amadeus.com
-  baseURL: https://api.sandbox.amadeus.com//v1.2//trains/extensive-search
-  tags: Trains, Extensive, Search
+  baseURL: https://api.sandbox.amadeus.com//v1.2
+  tags: Marketplace, Technology, Travel, Transportation, Airlines, API Provider, Hotels,
+    Profiles, Relative Data, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/trainsextensivesearch-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/trainsextensivesearch-get-openapi.md
-- name: Amadeus Get Trains Schedule Search
-  x-api-slug: amadeus
+- name: Amadeus - Get Trains Schedule Search
+  x-api-slug: trainsschedulesearch-get
   description: |-
     This API allows you to find all the possible destinations in the Rail Instant Search cache (used by Extensive Search above) from a given origin station on a given day. You can use this to help build network maps, journey planners or provide inspiration for rail travel.
 
@@ -377,15 +395,16 @@ apis:
     Currently agglomeration stations are not supported
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28139-sandbox-amadeus-com.jpg
   humanURL: https://amadeus.com
-  baseURL: https://api.sandbox.amadeus.com//v1.2//trains/schedule-search
-  tags: Trains, Schedule, Search
+  baseURL: https://api.sandbox.amadeus.com//v1.2
+  tags: Marketplace, Technology, Travel, Transportation, Airlines, API Provider, Hotels,
+    Profiles, Relative Data, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/trainsschedulesearch-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/trainsschedulesearch-get-openapi.md
-- name: Amadeus Get Travel Intelligence Flight Traffic
-  x-api-slug: amadeus
+- name: Amadeus - Get Travel Intelligence Flight Traffic
+  x-api-slug: travelintelligenceflighttraffic-get
   description: "The Flight Traffic API lets you find the origin and destination traffic
     summary between two journey points over a specified period.\nThe search returns
     number of flights & travelers for each origin and destination, ordered by popularity,
@@ -398,37 +417,39 @@ apis:
     intelligence for travel. Please see amadeus.com/travelintelligence for more information."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28139-sandbox-amadeus-com.jpg
   humanURL: https://amadeus.com
-  baseURL: https://api.sandbox.amadeus.com//v1.2//travel-intelligence/flight-traffic
-  tags: Airlines, Travel, Intelligence, Flight, Traffic
+  baseURL: https://api.sandbox.amadeus.com//v1.2
+  tags: Marketplace, Technology, Travel, Transportation, Airlines, API Provider, Hotels,
+    Profiles, Relative Data, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/travelintelligenceflighttraffic-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/travelintelligenceflighttraffic-get-openapi.md
-- name: Amadeus Get Travel Intelligence Top Destinations
-  x-api-slug: amadeus
+- name: Amadeus - Get Travel Intelligence Top Destinations
+  x-api-slug: travelintelligencetopdestinations-get
   description: |-
     The Top Flight Destinations API lets you find the most popular flight destinations from an origin during a period. This can help you answer questions like "Where are most people from Paris going to during the month of September?" The API is based on estimated flight traffic summary data from two journey points over a specific period. It returns up to 50 results, ordered by popularity, showing number of travelers as well as number of flights.
 
     This estimated search is based on Amadeus' Travel Intelligence Engine, a high performance scalable cloud-based platform, born in the age of Big Data and purposely built for the industry bringing total flexibility and speed to business intelligence for travel. Please see amadeus.com/travelintelligence for more information.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28139-sandbox-amadeus-com.jpg
   humanURL: https://amadeus.com
-  baseURL: https://api.sandbox.amadeus.com//v1.2//travel-intelligence/top-destinations
-  tags: Travel, Intelligence, Top, Destinations
+  baseURL: https://api.sandbox.amadeus.com//v1.2
+  tags: Marketplace, Technology, Travel, Transportation, Airlines, API Provider, Hotels,
+    Profiles, Relative Data, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/travelintelligencetopdestinations-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/travelintelligencetopdestinations-get-openapi.md
-- name: Amadeus Get Travel Intelligence Top Searches
-  x-api-slug: amadeus
+- name: Amadeus - Get Travel Intelligence Top Searches
+  x-api-slug: travelintelligencetopsearches-get
   description: "The Top Flight Search allows you to find number of estimated searches
     from an origin, optionally a destination, within a time period when travelers
     are performing the searches. \nThe search is based on queries performed from within
     a country (also refers to as market) and returns up to 50 results, ordered by
     popularity, showing number of searches for most searched destination with its
     previous year comparison. This search also shows patterns on how travelers are
-    searching for flights, revealing where, when and for how long they\u2019re planning
+    searching for flights, revealing where, when and for how long they???re planning
     to travel. See\nTrip Durations(How long are the trips planned for?) and\n Advance
     Search Period (How long before departures do travelers start searching for their
     trips?)\n\nThis estimated search is based on Amadeus' Travel Intelligence Engine,
@@ -437,15 +458,16 @@ apis:
     intelligence for travel. Please see amadeus.com/travelintelligence for more information."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28139-sandbox-amadeus-com.jpg
   humanURL: https://amadeus.com
-  baseURL: https://api.sandbox.amadeus.com//v1.2//travel-intelligence/top-searches
-  tags: Travel, Intelligence, Top, Searches
+  baseURL: https://api.sandbox.amadeus.com//v1.2
+  tags: Marketplace, Technology, Travel, Transportation, Airlines, API Provider, Hotels,
+    Profiles, Relative Data, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/travelintelligencetopsearches-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/travelintelligencetopsearches-get-openapi.md
-- name: Amadeus Get Travel Record Record Locator
-  x-api-slug: amadeus
+- name: Amadeus - Get Travel Record Record Locator
+  x-api-slug: travelrecordrecord-locator-get
   description: |-
     Note: This API requires the use of HTTPS
 
@@ -460,26 +482,19 @@ apis:
     Our data center is based in Europe, so there is a legal requirement that you to access this API over a secure connection. If you plan to store the information returned by this API, ensure you comply with storage requirements for European data, in addition to those of your local country. For example, there are strict requirements on the caching of retrieved travel records, so please ensure the cache control HTTP headers in the response are respected.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28139-sandbox-amadeus-com.jpg
   humanURL: https://amadeus.com
-  baseURL: https://api.sandbox.amadeus.com//v1.2//travel-record/{record_locator}
-  tags: Travel, Record, Record, Locator
+  baseURL: https://api.sandbox.amadeus.com//v1.2
+  tags: Marketplace, Technology, Travel, Transportation, Airlines, API Provider, Hotels,
+    Profiles, Relative Data, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/travelrecordrecord-locator-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/travelrecordrecord-locator-get-openapi.md
-- name: Amadeus
-  x-api-slug: amadeus
-  description: Amadeus travel technology helps businesses connect to the global travel
-    ecosystem, manage operations more effectively and serve travellers better than
-    ever
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28139-sandbox-amadeus-com.jpg
-  humanURL: https://amadeus.com
-  baseURL: https://api.sandbox.amadeus.com//v1.2
-  tags: Amadeus
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/amadeus/master/_listings/amadeus/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://amadeus.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://amadeus.stack.network
 - type: x-crunchbase
   url: https://crunchbase.com/organization/amadeus
 - type: x-documentation
